@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sebastián Gallardo</title>
+  </head>
+  <body>
+    <nav class="container-nav">
+      <p class="nav-name">Sebastián Gallardo</p>
+      <ul class="nav-list">
+        <li><a href="#">Sobre mi</a></li>
+        <li><a href="#">Experiencia</a></li>
+        <li><a href="#">Proyecto</a></li>
+      </ul>
+    </nav>
+
+    <header class="container-header">
+      <div class="header-presentation">
+        <h1 class="heading-name">Hola, soy Sebastián Gallardo</h1>
+        <p class="heading-description">
+          Ingeniero Civil en Informática y Telecomunicaciones con fuerte interés
+          en el desarrollo de software y el aprendizaje constante.
+        </p>
+        <a class="btn" href="#">Hablemos!</a>
+      </div>
+      <img src="./img/4799410.jpg" />
+
+      <!-- <p class="header-about-me">
+        Mi pasión por explorar nuevas tecnologías me llevó a certificarme en AWS
+        como Cloud Practitioner. Siempre estoy buscando nuevas oportunidades
+        para crecer profesionalmente y contribuir de manera significativa en
+        proyectos. (MAYOR A 75 CARACTERES POR LINEA)
+      </p> -->
+    </header>
+
+    <section class="section-experience">
+      <div class="container-experience">
+        <h3 class="title-section-experience">Experiencia</h3>
+        <div class="all-experiences">
+          <div class="card-experience">
+            <p class="card-date">Ago 2022 — presente</p>
+            <div class="card-description">
+              <h4 class="title-experience">
+                Associate technology specialist software enginner
+              </h4>
+              <p>
+                Soporte técnico clave dentro del portafolio de Seller Success
+                para optimizar procesos y sistemas. He automatizado soluciones
+                con JavaScript y Python.
+              </p>
+              <p>
+                Colaboré con SRE del equipo utilizando herramientas de Google
+                Cloud, como BigQuery, Cloud Storage y Cloud Functions.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-experience">
+            <p class="card-date">Abr 2022 — Ago 2022</p>
+            <div class="card-description">
+              <h4 class="title-experience">Trainee TI</h4>
+
+              <p>
+                Soporte técnico dentro del equipo de Seller Vendor Link, me
+                encargué de resolver incidencias relacionadas con servicios de
+                productos, logística y gestión de usuarios
+              </p>
+              <p>
+                Colaboré con desarrollador back-end del equipo para automatizar
+                soluciones en Ruby on Rails y optimizar consultas NoSQL en
+                MongoDB
+              </p>
+            </div>
+          </div>
+
+          <div class="card-experience">
+            <p class="card-date">Ene 2022 — Mar 2022</p>
+            <div class="card-description">
+              <h4 class="title-experience">
+                Desarrollador Fronted (Prática Profesional)
+              </h4>
+
+              <p>
+                Contribuí al desarrollo de la interfaz de usuario de una
+                aplicación web de soporte para Sodimac.
+              </p>
+              <p>
+                Utilicé tecnologías como HTML, CSS, JavaScript, React y Sass,
+                trabajando en el IDLE Visual Studio Code en un entorno de
+                pruebas.
+              </p>
+            </div>
+          </div>
+          <div class="card-experience">
+            <p class="card-date">Ene 2021 — May 2021</p>
+            <div class="card-description">
+              <h4 class="title-experience">
+                SPBox - Software engineer (Práctica)
+              </h4>
+              <p>
+                Desarrollé un sistema para el reporte de accidentes, utilizando
+                jQuery y jQuery UI para crear una interfaz de usuario, y
+                Bootstrap para asegurar un diseño responsivo. Este sistema se
+                integró con SharePoint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-skills">
+      <div class="container-skills">
+        <h4 class="title-tech programming-title">Lenguajes de programación</h4>
+        <ul class="programming-list">
+          <li><img src="./img/html5_logo.png" width="50px" /></li>
+          <li>CSS</li>
+          <li><img src="./img/sass_logo.png" width="50px" /></li>
+          <li><img src="./img/logo_js.png" width="50px" /></li>
+          <li><img src="./img/ts_logo.png" width="50px" /></li>
+          <li><img src="./img/node-js-logo.png" width="60px" /></li>
+          <li>SQL</li>
+        </ul>
+
+        <h4 class="title-tech library-title">Librerías y Frameworks</h4>
+        <ul class="library-list">
+          <li>React</li>
+          <li>Express</li>
+          <li>jquery</li>
+          <li>Mongoose</li>
+        </ul>
+
+        <h4 class="title-tech tools-title">Herramientas y plataformas</h4>
+        <ul class="tools-list">
+          <li>Git</li>
+          <li>Github</li>
+          <li>AWS</li>
+          <li>Docker</li>
+          <li>Jira</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-projects">
+      <h3>Proyectos</h3>
+    </section>
+
+    <section class="section-form">
+      <div class="container-form">
+        <div class="text-form">
+          <h3>Juntémonos y hablemos</h3>
+        </div>
+
+        <form class="form" action="" method="POST">
+          <div>
+            <label>Nombre</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label>Correo</label>
+            <input type="email" />
+          </div>
+
+          <div>
+            <label>Mensaje</label>
+            <textarea></textarea>
+          </div>
+
+          <button class="btn">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>Realizado por Sebastián Gallardo</p>
+      <p>© Copyright 2024</p>
+    </footer>
+  </body>
+</html>
