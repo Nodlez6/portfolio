@@ -197,7 +197,7 @@
 /* SECTION FORM */
 
 .container-form {
-  max-width: 70rem;
+  max-width: 60rem;
   padding: 4rem 0rem;
   height: 40rem;
 }
@@ -222,10 +222,11 @@
 .form {
   background-color: #fff;
   border-radius: 0.5rem;
-  padding: 3rem;
+  padding: 1.5rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 2fr 0.5fr;
+  row-gap: 1rem;
 }
 .form button {
   justify-self: end;
@@ -274,13 +275,13 @@
 
 /* FOOTER */
 footer {
-  padding: 3rem;
   border-top: 1px solid #eee;
 }
 .container-footer {
   display: flex;
   justify-content: space-evenly;
   gap: 2rem;
+  padding: 3rem;
 }
 .footer-list {
   list-style: none;
