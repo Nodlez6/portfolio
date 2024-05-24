@@ -127,6 +127,20 @@ body {
   justify-self: center;
   font-size: 2.074rem;
   font-weight: 600;
+  position: relative;
+}
+.title-section-experience::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  background-color: #004ff2;
+  height: 0.25rem;
+  border-radius: 2rem;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
 }
 
 .card-title {
@@ -157,7 +171,7 @@ body {
 
 /* SECCION TECNOLOGÍAS */
 .section-skills {
-  background-color: #e6edfe;
+  background-color: #f9fafb;
 }
 .container-skills {
   display: grid;
@@ -203,13 +217,27 @@ body {
   justify-self: center;
   font-size: 2.074rem;
   font-weight: 600;
+  position: relative;
+}
+.title-projects::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  background-color: #004ff2;
+  height: 0.25rem;
+  border-radius: 2rem;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
 }
 .card-project {
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  border-radius: 0.5rem;
+
   padding: 2rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -219,17 +247,17 @@ body {
 }
 
 /* SECTION FORM */
-.section-form {
-  margin: 2rem 0;
-}
+
 .container-form {
   max-width: 70rem;
-  height: 35rem;
-  margin: 0 auto;
+  padding: 4rem 0rem;
+  height: 40rem;
+}
+
+.contact-form {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 0.5rem;
-
   display: grid;
   grid-template-columns: 1fr 1.7fr;
 }
