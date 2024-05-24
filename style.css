@@ -154,43 +154,33 @@ body {
 }
 .container-skills {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 5rem;
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
-  max-width: 80rem;
+
   margin-bottom: 10rem;
   padding: 4rem 0rem;
 }
-.programming-list {
+.icons-list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.programming-list img {
-}
-.library-list {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.library-list {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-.tools-list {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+  justify-self: center;
+  gap: 0.7rem;
 }
 
 .title-tech {
   color: #27272a;
   font-size: 1.728rem;
   font-weight: 600;
+  justify-self: center;
+}
+
+.test {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
 }
 
 /* SECTION FORM */
