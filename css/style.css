@@ -1,55 +1,3 @@
-/*
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-h1	2.986rem	
-h2	2.488rem	
-h3	2.074rem	
-h4	1.728rem	
-h5	1.44rem	
-h6	1.2rem	
-p	1rem	
-small	0.833rem	
-*/
-
-/* COLORS
-MAIN COLOR: #004ff2
-
-GREY COLOR: #27272a
-/*
-
-/* GENERAL */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #27272a;
-}
-body {
-  font-family: "Inter", sans-serif;
-}
-.container {
-  max-width: 80rem;
-  margin: 0 auto;
-}
-.btn {
-  background-color: #004ff2;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  font-weight: 500;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-.btn:hover {
-  background-color: #3372f5;
-}
-
 /* NAVIGATOR */
 
 .container-nav {
@@ -327,11 +275,23 @@ body {
 /* FOOTER */
 footer {
   padding: 3rem;
-  display: flex;
   border-top: 1px solid #eee;
 }
-.footer {
+.container-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 2rem;
+}
+.footer-list {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-list li img {
+  width: 2.5rem;
 }
