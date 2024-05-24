@@ -33,6 +33,22 @@ body {
   max-width: 80rem;
   margin: 0 auto;
 }
+.btn {
+  background-color: #004ff2;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #3372f5;
+}
 
 /* NAVIGATOR */
 
@@ -94,16 +110,7 @@ body {
   margin-bottom: 2rem;
   line-height: 1.5;
 }
-.btn-letstalk {
-  text-decoration: none;
-  background-color: #004ff2;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  font-weight: 500;
-  border-radius: 0.5rem;
-}
+
 .container-header img {
   max-width: 100%;
 }
@@ -157,7 +164,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
 
-  margin-bottom: 10rem;
   padding: 4rem 0rem;
 }
 .icons-list {
@@ -183,13 +189,26 @@ body {
   row-gap: 0.5rem;
 }
 
+/* PROJECT */
+.container-projects {
+  display: grid;
+  padding: 4rem 0rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.title-projects {
+  grid-column: 1/3;
+  justify-self: center;
+  font-size: 2.074rem;
+  font-weight: 600;
+}
+
 /* SECTION FORM */
 .section-form {
   margin: 2rem 0;
 }
 .container-form {
   max-width: 70rem;
-  height: 50rem;
+  height: 35rem;
   margin: 0 auto;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -217,10 +236,9 @@ body {
   grid-template-rows: 1fr 1fr 1fr 0.5fr;
 }
 .form button {
-  display: inline-block;
   justify-self: end;
-  align-self: center;
-  padding: 1rem;
+  align-self: end;
+  padding: 1rem 0.8rem;
 }
 
 .form label {
