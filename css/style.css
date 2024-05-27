@@ -59,9 +59,7 @@
 
 /* ROADMAP */
 .container-timeline {
-  height: 30rem;
-  margin: 0 auto;
-  width: 70rem;
+  height: 25rem;
 }
 .header-timeline {
   display: grid;
@@ -69,6 +67,7 @@
   justify-items: center;
   row-gap: 1rem;
   margin-bottom: 6rem;
+  width: 100%;
 }
 .header-timeline h3 {
   font-size: 2.074rem;
@@ -80,19 +79,20 @@
   padding: 0.3rem 1rem;
   font-size: 1.4rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 .checkpoint {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.work-item:nth-child(even) {
+.work-item:nth-child(odd) {
   border-bottom: 2px solid #263238;
   padding-bottom: 4rem;
   transform: translateY(-0.81rem);
   position: relative;
 }
-.work-item:nth-child(even)::before {
+.work-item:nth-child(odd)::before {
   content: "";
   width: 3rem;
   height: 2px;
@@ -102,13 +102,13 @@
   left: 50%;
   transform: translateX(-50%) rotate(-90deg);
 }
-.work-item:nth-child(odd) {
+.work-item:nth-child(even) {
   border-top: 2px solid #263238;
   padding-top: 4rem;
   transform: translateY(7.31rem);
 }
 
-.work-item:nth-child(odd)::before {
+.work-item:nth-child(even)::before {
   content: "";
   width: 3rem;
   height: 2px;
