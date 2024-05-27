@@ -65,7 +65,7 @@
   row-gap: 1rem;
   margin-bottom: 4rem;
 }
-.header-timeline span {
+/* .header-timeline span {
   justify-self: end;
   background-color: #263238;
   font-size: 1rem;
@@ -81,36 +81,14 @@
 }
 .timeline {
   margin-bottom: 20rem;
-}
+} */
 
-.checkpoint {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  position: relative;
-  width: 100%;
-}
-.checkpint div {
-  width: 400px;
-}
-
-.checkpoint div h6 {
-  font-size: 1.2rem;
-  display: inline;
-}
-
-.enterprise {
+/* .enterprise {
   display: inline;
   position: relative;
   padding-left: 1.5rem;
-}
-
-/* .enterprise {
-  margin-left: 1rem;
-  position: relative;
-}
-*/
-.enterprise::before {
+} */
+/* .enterprise::before {
   content: "";
   width: 0.5rem;
   height: 0.5rem;
@@ -119,38 +97,61 @@
   position: absolute;
   top: 30%;
   left: 8%;
+} */
+
+.checkpoint {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.3fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: stretch;
+  align-items: center;
+}
+.timeline-work {
+  height: 10rem;
+}
+.line-top {
+  border-top: 2px solid #263238;
+  padding-top: 3rem;
+}
+.line-bottom {
+  border-bottom: 2px solid #263238;
+  padding-bottom: 3rem;
+}
+.first-work {
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 
-.checkpoint div:nth-child(even) {
+.second-work {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.third-work {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.four-work {
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+
+/* .timeline-work:nth-child(even) {
   border-bottom: 2px solid #263238;
   padding-bottom: 7.5rem;
+  position: relative;
 }
-.checkpoint div:nth-child(even)::before {
+.timeline-work:nth-child(even)::before {
   content: "";
   background: #263238;
   width: 6rem;
   height: 2px;
   top: 50%;
-
+  left: 50%;
   position: absolute;
-  transform: rotate(90deg) translateX(2rem);
-}
-.checkpoint div:nth-child(odd) {
-  border-top: 2px solid #263238;
-  padding-top: 7rem;
-  transform: translateY(10.25rem);
-}
-.checkpoint div:nth-child(odd)::before {
-  content: "";
-  background: #263238;
-  width: 6rem;
-  height: 2px;
-  top: 50%;
-  position: absolute;
-  transform: rotate(90deg) translateX(-2.3rem);
-}
+  transform: translate(-50%) rotate(90deg) translateX(2.1rem);
+} */
 
-.checkpoint div h6 {
+/* .checkpoint div h6 {
   position: relative;
 }
 
@@ -172,7 +173,7 @@
   top: 0;
   left: 2.45rem;
   transform: translateY(-1.2rem);
-}
+} */
 
 /* EXPERIENCE SECTION */
 .container-experience {
