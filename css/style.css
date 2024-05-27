@@ -73,7 +73,7 @@
   position: relative;
 }
 .checkpoint div {
-  width: 15rem;
+  width: 16rem;
 }
 
 .checkpoint div:nth-child(even) {
