@@ -36,6 +36,7 @@
 .nav-link:active {
   color: #5388ff;
 }
+/**********************/
 
 /* HEADER */
 
@@ -57,6 +58,7 @@
   line-height: 1.5;
   margin-bottom: 1rem;
 }
+/**********************/
 
 /* ROADMAP */
 .header-timeline {
@@ -72,8 +74,19 @@
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
   justify-items: center;
-  column-gap: 1rem;
+  column-gap: 2rem;
   margin-bottom: 8rem;
+}
+.date__timeline:nth-child(odd) {
+  justify-self: end;
+}
+.date__timeline:nth-child(even) {
+  justify-self: start;
+}
+.date__timeline {
+  color: #004ff2;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .middle__line {
   background-color: #27272a;
@@ -98,10 +111,6 @@
   margin-bottom: 0.25rem;
   font-weight: 500;
 }
-.work-item p {
-  font-size: 1.1rem;
-  font-weight: 400;
-}
 .work-item:nth-child(odd) {
   justify-self: start;
   padding-left: 1rem;
@@ -111,64 +120,12 @@
   padding-right: 1rem;
   text-align: right;
 }
-
-.date__timeline:nth-child(odd) {
-  justify-self: end;
-}
-.date__timeline:nth-child(even) {
-  justify-self: start;
-}
-.date__timeline {
-  color: #004ff2;
-  text-transform: uppercase;
-  font-weight: 400;
-}
 .final__point {
   grid-column: 2/3;
 }
+/**********************/
 
-/* EXPERIENCE SECTION */
-.container-experience {
-  padding-bottom: 4rem;
-  display: grid;
-  grid-template-columns: 1.2fr 2fr;
-  gap: 1rem;
-}
-.title-section-experience {
-  align-self: center;
-  justify-self: center;
-  font-size: 2.074rem;
-  font-weight: 600;
-  position: relative;
-}
-
-.card-title {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-.card-description p {
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
-  font-size: 1rem;
-  align-self: end;
-}
-.card-experience {
-  display: grid;
-  grid-template-columns: 1fr 2.8fr;
-  margin-bottom: 1rem;
-  justify-items: center;
-}
-.card-date {
-  text-transform: uppercase;
-  padding-top: 0.2rem;
-  justify-self: center;
-  color: #004ff2;
-  font-weight: 200;
-  font-size: 0.9rem;
-}
-
-/* SECCION TECNOLOGÍAS */
+/* SKILLS SECTION */
 .section-skills {
   background-color: #f5f6f5;
 }
@@ -178,27 +135,25 @@
   margin: 0 auto;
   padding: 4rem 0rem;
 }
-.icons-list {
-  list-style: none;
-  display: flex;
-  justify-self: center;
-  gap: 0.7rem;
-}
-
-.title-tech {
-  color: #27272a;
-  font-size: 1.728rem;
-  font-weight: 300;
-  justify-self: center;
-}
-
-.test {
+.list-skills {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  row-gap: 2rem;
+  row-gap: 1rem;
+}
+.list-skills h4 {
+  color: #27272a;
+  font-size: 1.728rem;
+  font-weight: 300;
+  justify-self: center;
+}
+.list-icons {
+  list-style: none;
+  display: flex;
+  justify-self: center;
+  gap: 0.7rem;
 }
 
 /* PROJECT */
