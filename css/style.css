@@ -106,6 +106,7 @@
 .work-item h6 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 .work-item .enterprise {
   font-size: 1.1rem;
@@ -195,7 +196,7 @@
 .title-tech {
   color: #27272a;
   font-size: 1.728rem;
-  font-weight: 600;
+  font-weight: 300;
   justify-self: center;
 }
 
@@ -205,7 +206,7 @@
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  row-gap: 0.5rem;
+  row-gap: 2rem;
 }
 
 /* PROJECT */
@@ -222,21 +223,8 @@
   justify-self: center;
   font-size: 2.074rem;
   font-weight: 600;
-  position: relative;
 }
-.title-projects::after {
-  content: "";
-  display: block;
-  width: 2rem;
-  background-color: #004ff2;
-  height: 0.25rem;
-  border-radius: 2rem;
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  top: 60%;
-  transform: translateX(-50%);
-}
+
 .card-project {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -254,14 +242,11 @@
 /* SECTION FORM */
 
 .container-form {
-  max-width: 60rem;
+  max-width: 70rem;
   margin: 0 auto;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  border-radius: 0.5rem;
   margin-bottom: 5rem;
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: 1fr 1fr;
   height: 40rem;
 }
 
@@ -269,21 +254,24 @@
   border-radius: 0.5rem 0 0 0.5rem;
   padding: 2rem;
 }
-.text-form h3 {
-  font-size: 1.728rem;
-  font-weight: 500;
+.text-form h6 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.2;
+  font-family: sans-serif;
+  margin-bottom: 1rem;
 }
 .form {
   background-color: #fff;
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 2rem 2rem 8rem 2rem;
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 2fr 0.2fr;
   row-gap: 1rem;
 }
 .form button {
-  justify-self: end;
   align-self: end;
   padding: 1rem 0.8rem;
 }
@@ -298,11 +286,10 @@
 .form select {
   display: block;
   width: 100%;
-  padding: 0.4rem 0.4rem 0.4rem 0rem;
+  padding: 0.8rem;
   font-size: 1rem;
-  color: inherit;
-  border: none;
-  border-bottom: 1px solid #eee;
+  border: 1px solid #eee;
+  border-radius: 1.2rem;
 }
 
 .form input::placeholder {
@@ -310,17 +297,20 @@
 }
 .form input:focus {
   outline: none;
-  border-bottom: 1px solid #3372f5;
+  border: 1px solid #3370f54a;
 }
 
 .form textarea {
   display: block;
-  align-items: stretch;
   resize: none;
   width: 100%;
-
   border: 1px solid #eee;
-  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+  padding: 0.8rem;
+  border: 1px solid #eee;
+  border-radius: 1.2rem;
+  height: 85%;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
 }
 .form textarea:focus {
   outline: none;
@@ -333,8 +323,8 @@ footer {
 }
 .container-footer {
   display: flex;
-  justify-content: space-evenly;
-  gap: 2rem;
+  justify-content: space-between;
+
   padding: 3rem;
 }
 .footer-list {
