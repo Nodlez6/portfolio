@@ -1,12 +1,12 @@
 /*
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+SPACING SYSTEM (rem)
+0.25 / 0.5 / 1 / 2 / 4 / 6 / 8 / 10 / 16 / 32
 
 h1	2.986rem	
 h2	2.488rem	
 h3	2.074rem	
 h4	1.728rem	
-h5	1.44rem	
+h5	1.5rem	
 h6	1.2rem	
 p	1rem	
 small	0.833rem	
@@ -31,6 +31,12 @@ html {
 }
 body {
   font-family: "Inter", sans-serif;
+}
+h3 {
+  font-size: 2.074rem;
+}
+h5 {
+  font-size: 1.5rem;
 }
 .container {
   max-width: 80rem;
