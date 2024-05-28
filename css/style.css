@@ -261,17 +261,15 @@
   border-radius: 0.5rem;
   margin-bottom: 5rem;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.5fr 2fr;
   height: 40rem;
 }
 
 .text-form {
-  background-color: #0037a9;
   border-radius: 0.5rem 0 0 0.5rem;
   padding: 2rem;
 }
 .text-form h3 {
-  color: #fff;
   font-size: 1.728rem;
   font-weight: 500;
 }
