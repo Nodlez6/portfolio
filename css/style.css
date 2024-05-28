@@ -98,7 +98,7 @@
   margin-bottom: 0.25rem;
   font-weight: 500;
 }
-.work-item .enterprise {
+.work-item p {
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -118,7 +118,7 @@
 .date__timeline:nth-child(even) {
   justify-self: start;
 }
-.date__timeline p {
+.date__timeline {
   color: #004ff2;
   text-transform: uppercase;
   font-weight: 400;
