@@ -26,6 +26,9 @@ GREY COLOR: #27272a
   box-sizing: border-box;
   color: #27272a;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Inter", sans-serif;
 }
