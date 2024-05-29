@@ -70,7 +70,7 @@
 
 .container-timeline {
   margin: 0 auto;
-  max-width: 40rem;
+
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
   justify-items: center;
@@ -109,6 +109,12 @@
   height: 10rem;
   perspective: 1000px;
   margin-bottom: 2rem;
+}
+.flip-card:nth-child(odd) {
+  justify-self: start;
+}
+.flip-card:nth-child(even) {
+  justify-self: end;
 }
 .flip-card-inner {
   border: 1px solid #d6d6d6;
